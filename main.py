@@ -15,7 +15,7 @@ except Exception as e:
     print('PyTorchのバージョン確認でエラー:', e)
 
 # 1. 画像ファイルのパスをユーザー入力
-img_path = input('画像ファイルのパスを入力してください: ')
+img_path = "Data/" + input('画像ファイルのパスを入力してください: ')
 if not os.path.exists(img_path):
     print('ファイルが見つかりません:', img_path)
     sys.exit(1)
